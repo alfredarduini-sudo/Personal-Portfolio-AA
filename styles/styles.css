@@ -1,0 +1,433 @@
+/*
+ * Alfred Arduini
+ * File name: 
+ */
+
+/*css reset*/
+header, body, nav, main, footer, h1, h2, h3 img, section, figure, figcaption, aside, table, form{
+    margin: 0;
+    padding: 0;
+    border: 0; 
+}
+
+/* Style rules for body*/
+body{
+    background: linear-gradient(white, #000d33);
+    background-color: #000d33;
+}
+
+/*Style rules for aside*/
+aside{
+    text-align: center;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 3px 3px 10px #9187bf;
+}
+
+/*Style rules for section*/
+section{
+    margin: 1%;
+}
+
+/*Style rules for figure*/
+figure{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 272px;
+    
+}
+
+figure img{
+    border-radius: 10%;
+    border: 5px solid ;
+}
+
+/*Style rules for figcaption*/
+figcaption{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 1% 8%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/* Style rules for header*/
+header{
+    text-align: center;
+    font-size: 1.5em;
+    color: #002080;
+}
+
+header h1{
+        font-family: yesteryear, sans-serif, 'Times New Roman';
+}
+
+/* Style rules for nav*/
+nav{
+    background-color: #0033cc;
+}
+
+nav li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.mobile-nav a{
+    color: #fff;
+    text-align: center;
+    font-size: 1.75em;
+    text-decoration: none;
+    padding: 2%;
+    display: block;
+}
+
+.mobile-nav a.nav-icon{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #002080;
+    padding: 1%;
+}
+
+.nav-icon div{
+    height: 20px;
+    width: 20px;
+    color: #fff;
+}
+
+/* styles for images*/
+img{
+    border-radius: 10%;
+}
+
+.small{
+    width: 200px;
+    height:auto;
+}
+
+#schooling img{
+    width: fit-content;
+}
+
+/*Style rules for mobile viewport*/
+.mobile-tablet{
+    display: block;
+}
+
+/* Style rules for main content*/
+main{
+    padding: 1%;
+    background: linear-gradient(#f5f6fa, #c0cffc);
+    background-color: #e6e6e6;
+    overflow: auto;
+    font-family: sans-serif, 'Times New Roman';
+    color: #002080;
+}
+
+main p{
+ font-size: 1em;
+}
+
+main h1{
+    font-size: 2em;
+}
+
+main h2{
+    font-size: 1.50em;
+}
+
+main h3{
+    font-size: 1.25em;
+}
+
+main h4{
+    padding-bottom: 1.15em;
+}
+
+main ul{
+    list-style-type: square;
+}
+
+#classes h2, #classes h3{
+    text-align: center;
+    padding: 2%;
+}
+
+#contact{
+    text-align: center;
+}
+
+#contact img{
+    width: 150px;
+    height: auto;
+}
+
+#resume h1{
+    text-align: center;
+    text-shadow: 6px 6px 10px #666d84;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.flex{
+    display:flex;
+    flex-direction: column;
+    line-height: 21px;
+    margin-bottom: 10px;
+    list-style:none;
+    border: 2px solid #000d33; 
+    text-align: start;
+    padding-bottom: 1.5em;
+    
+}
+
+.tel-link{
+    background-color: #000d33;
+    padding: 2%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.tel-link a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Styles for div id =skills*/
+#skills{
+    border: 2px dotted;
+    border-color: #000d33;
+}
+
+/* Styles for hidding elements*/
+.tab-desk, .desktop{
+    display: none;
+}
+
+/*style rules for form*/
+fieldset, input, textarea{
+    margin-bottom: 2%;
+}
+
+fieldset legend{
+    font-weight: bold;
+    font-size: 1.30em;
+}
+
+label{
+    display: block;
+    padding-top: 2%;
+}
+
+form #submit{
+    margin: 0 auto;
+    display: block;
+    padding: 2%;
+    font-size: 1em;
+    background-color: #e6e6e6;
+}
+
+/* Style rules for footer*/
+footer{
+    color:#e6e6e6;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px), print{
+    /* Tablet Viewport: Show tab-desk class, hide mobile class*/
+    .tab-desk{
+        display:block;
+    }
+
+    .mobile, .mobile-nav{
+        display: none;
+    }
+    nav ul{
+        list-style-type: none;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    /*Tablet Viewport: Style rule for nav*/
+    nav li{
+        display: inline-block;
+        font-size: 1.15em;
+        list-style-type: none;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    /*Tablet Viewport: Style rule for main*/
+    img{
+        max-width: 750px;
+        height: auto;
+    }
+
+    figure img{
+        width: 300px;
+    }
+
+    figure{
+        position: relative;
+        margin: 2% auto;
+    }
+    
+    figcaption{
+        border-top: 4px solid #002080;
+    }
+
+    #skills{
+        border:none;
+    }
+
+    #technical, #soft{
+        width: 20%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    #contact img{
+        width: 500px;
+    }
+
+    .home aside{
+
+        text-shadow: none;
+        font-size: 1.5em;
+    }
+
+    /*Tablet Viewport: Style rule for form*/
+    form{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    /*Tablet Viewport: Style rule for footer*/
+    footer{
+        clear: left;
+    }
+
+}
+
+/* Media Query for Desktop Viewport*/
+@media screen and (min-width: 769px), print{
+    /*Desktop Viewport: Style rules for desktop and mobile-tablet*/
+    .desktop{
+        display: block;
+    }
+
+    .mobile-tablet{
+        display: none;
+    }
+
+    /* Desktop Viewport: Style rule for header*/
+    header{
+        padding: 0%;
+        font-size: 2.5em;       
+    }
+
+    /* Desktop Viewport: Style rule for nav*/
+    nav li{
+        font-size: 2em;
+    }
+
+    nav li a:visited{
+        color: #b2b6c1;
+    }
+
+    nav li a:hover{
+        color:#fff;
+        background-color: #000d33;
+        transform: scale(1.1);
+    }
+
+    nav li a:active{
+        background-color: #666d84;
+    }
+
+    /* Desktop Viewport: Style rule for main*/
+    main h1{ 
+        font-size: 3em;
+    }    
+
+    main h2{
+        font-size: 2.50em;
+    }
+
+    main h3{
+        font-size: 2.25em;
+    }
+
+    main h4{
+        padding-bottom: 2.15em;
+    }
+
+    /* Desktop Viewport: Style rule for gaming, crafing, movies, sewing*/
+    .small{
+        width: 1000px;
+    }
+
+    #movies img{
+        height: 550px;
+        width: fit-content;
+    }
+
+    #gaming img{
+        height: 550px;
+        width: auto;
+    }
+
+    /* Desktop Viewport: Style rule for grid*/
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 20px;
+    }
+    .grid h3, h2{
+        grid-column: 1 / span 2;
+    }
+
+    #schooling.grid{
+        border: 10px groove #0033cc;
+    }
+
+    /* Desktop Viewport: Style rule for table*/
+    table{
+        border: 2px solid #0033cc;
+        margin: 0 auto;
+    }
+
+    caption{
+        font-size: 1.75em;
+        font-weight: bold;
+        padding: 1%;
+    }
+
+    th,td{
+        border: 2px solid #0033cc;
+        padding: 1%;
+    }
+
+    th{
+        background-color: #000d33;
+        color: #fff;
+        font-size: 1.45em;
+    }
+
+    tr:nth-child(odd){
+        background-color: #9187bf;
+        color: #f5f6fa;
+    }
+    
+}
