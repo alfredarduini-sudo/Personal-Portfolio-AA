@@ -45,6 +45,13 @@ figure img{
     border: 5px solid ;
 }
 
+.social img{
+    display: inline;
+    height: 40px;
+    width: 40px;
+}
+
+
 /*Style rules for figcaption*/
 figcaption{
     position: relative;
